@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: #fff;
+}
+body{
+
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 36px;
+    font-weight:bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+#search-input{
+
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 0.1px sold wheat;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #cebdbd;;
+
+}
+
+#search-button{
+
+    padding: 10px 20px;
+    background-color: #138065;
+    color:#fff;
+    border:none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin :auto;
+    z-index: 999;
+
+   
+}
+
+.search-result{
+    margin-bottom: 30px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    /* border: 0.0001px solid rgb(122, 115, 102); */
+
+
+}
+
+.search-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: 0.0001px solid wheat; */
+}
+.search-result:hover img {
+
+    opacity: 0.8;
+    
+} 
+
+.search-result a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #d4c7c7;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    border: 0.00001px solid rgb(40, 39, 36);
+
+
+}
+
+
+
+#show {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin: 5% 50% 5% 45%;
+  display: none;
+}
+
+#show:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#show:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+
+}
+#show:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .search-result{
+        padding: 20px;   
+    }
+    .search-result{
+         width: 45%;    
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .search-result{
+        width:100%;
+
+    }
+    
+}
+
+
+  /* footer css stared here */
+
+  footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    height: 100px;
+    margin-top: 40vh;
+    padding: 5px 0px 0px ;
+    background-color: #1d1414;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    background-color: #1d1414;  
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  3px;
+    margin: 12px;
+    margin-bottom: -2px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.3em;
+    color:white;
+    opacity: 0,9;
+}
+/* Hover effect on social media icon */
+.socialIcons a:hover{
+    background-color: #b4a6a6;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 10px 0px 20px -30px ;
+    
+    
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #1d1414;
+}
+.footerNav ul li{
+    background-color: #1d1414;
+
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    opacity: 0.6;
+    transition: 0.2s;
+    background-color: #1d1414;
+   
+
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    height: 40px;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.designer{
+    opacity: 0.7;
+    font-family:serif;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    margin: 0px 5px;
+    font-size: 18px;
+}
+@media (max-width: 700px){
+    
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
